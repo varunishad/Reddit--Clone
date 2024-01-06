@@ -17,23 +17,21 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from blog import views
 # import blog.views
 
 urlpatterns = [
-    # path('registeration/', include('registeration.urls')),
-    # path('', include('homepage.urls')),
-    # path('',views.home, name='home'),
-    # path('', views.home, name='home'),
     path("",views.home),
     path('registeration/',include('registeration.urls')),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
 ]
 
+urlpatterns += staticfiles_urlpatterns()
+
 if settings.DEBUG:
     urlpatterns += static(
         settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(
         settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-

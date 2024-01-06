@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.contrib.auth.models import User, auth
 
 def signup(request):
-
     if request.method == 'POST':
       username = request.POST['username']
       email = request.POST['email']
@@ -46,6 +45,7 @@ def signin(request):
         password = request.POST['password']
 
         user = auth.authenticate(username=username, password=password)
+        print("user:", user)
 
         if len(username.rstrip()) < 1:
           messages.info(request,'Invalid Username')
@@ -55,10 +55,13 @@ def signin(request):
           messages.info(request, 'Invalid Password')
           return redirect('/registeration/signin')
 
-        else:
+        if user:
             auth.login(request, user)
             request.session["user"]=username
             return redirect('/blog/home')
+
+        else:
+            messages.info(request,'Invalid Username or Password')
 
     return render(request, 'registeration/signin.html')
 
