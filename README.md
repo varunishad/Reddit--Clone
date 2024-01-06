@@ -44,4 +44,4 @@ This project is a simple Reddit clone web application built using [Python, Djang
 3. Explore posts, submit new posts, upvote/downvote posts, and comment on posts.
 
 
-> Visit this clone website [here]()
+> Experience and share your thoughts with the world: [Reddit](https://reddit-clone-1vcx.onrender.com/)
