@@ -11,7 +11,7 @@ This project is a simple Reddit clone web application built using [Django](https
 - Commenting on posts
 - Social media login (Google, Apple)
 
-## Installation
+## Installation (If required..)
 
 1. Clone the repository:
 
