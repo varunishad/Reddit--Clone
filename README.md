@@ -1,6 +1,6 @@
 # Reddit Clone
 
-This project is a simple Reddit clone web application built using [Python, Django](https://www.djangoproject.com/) for the backend and [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for the frontend.
+This project is a simple Reddit clone web application built using [Django](https://www.djangoproject.com/).
 
 
 ## Features
