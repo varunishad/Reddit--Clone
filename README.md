@@ -37,7 +37,7 @@ This project is a simple Reddit clone web application built using [Django](https
 
 ## Usage
 
-1. Access the application in your web browser at http://localhost:8000.
+1. Access the application in your web browser at https://reddit-clone-1vcx.onrender.com/
 
 2. Sign up for a new account or log in if you already have an account.
 
